@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Ubuntu";
+        }
+        
+        body{
+            background-color: rgb(209, 207, 204);
+        }
+        header{
+            height: 60px;
+            width: 1280px;
+            box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -1px;
+            background-color: rgb(76, 76, 244);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 150px;
+            position: fixed;
+        }
+        .flipkartLogo{
+            height: 20px;
+        }
+        .exploreText{
+            display: flex;
+            gap: 4px;
+            color: white;
+            font-weight: 400;
+        }
+        #plus{
+            color: yellow;
+            padding: 0 5px 0 0;
+        }
+        .explorePlus{
+            height: 20px;
+        }
+        .searchBar{
+            height: 30px;
+            width: 270px;
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            
+        }
+        .searchIcon{
+            position: absolute;
+            left: 560px;
+            scale: 1.2;
+            top: 20px;
+        }
+        .login{
+            padding: 10px 40px;
+        }
+        .left{
+            height: 520px;
+            width: 500px;
+            background-color: white;
+            position: fixed;
+            left: 100px;
+            top: 60px;
+        }
+        .right{
+            height: auto;
+            width: 600px;
+            background-color: white;
+            margin-left: 601px;
+            overflow-y: scroll;
+            margin-top: 60px;
+        }
+        .container{
+            display: flex;
+        }
+        .cat{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow-y: scroll;
+        }
+        .image{
+            height: 90px;
+            width: 70px;
+        }
+        .image>img{
+            height: inherit;
+            cursor: pointer;
+        }
+        .play{
+            height: 400px;
+            padding: 10px 0 0 50px;
+            width: 350px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; flex-direction: column;">
+            <div>
+                <img class="flipkartLogo" src="images/flipkart.png" alt="">
+            </div>
+            <div style="display: flex;">
+                <div class="exploreText">
+                    <p><i>Explore</i></p>
+                    <p id="plus"><u><i>Plus</i></u></p>
+                </div>
+                <img class="explorePlus" src="images/exploreplus.png" alt="">
+            </div>
+        </div>
+
+        <div>
+            <input class="searchBar" type="text" placeholder="Search for products, brands and more">
+            <a href="">
+                <i class="fa-brands fa-searchengin searchIcon" style="color: #2e04a9;"></i>
+            </a>
+        </div>
+
+        <div>
+            <button class="login">Login</button>
+        </div>
+
+        <div><h3 style="color: white;">Become a Seller</h3></div>
+
+        <div>
+            <h3 style="color: white;">
+                More 
+                <i class="fa-solid fa-chevron-down" style="color: #fafcff;"></i>
+            </h3>
+        </div>
+
+        <div>
+            <h3 style="color: white;">
+                Cart
+                <i class="fa-solid fa-cart-shopping" style="color: white;"></i>
+            </h3>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="left" style="display: flex;">
+            <div class="cat">
+                <div class="image">
+                    <img onmouseover="change(this)" src="images/1.webp" alt="">
+                </div>
+                <div class="image">
+                    <img onmouseover="change(this)" style="padding-left: 15px;" src="images/2.webp" alt="">
+                </div>
+                <div class="image">
+                    <img onmouseover="change(this)" src="images/3.webp" alt="">
+                </div>
+                <div class="image">
+                    <img onmouseover="change(this)" src="images/4.webp" alt="">
+                </div>
+                <div class="image">
+                    <img onmouseover="change(this)" src="images/5.webp" alt="">
+                </div>
+                <div class="image">
+                    <img onmouseover="change(this)" src="images/6.webp" alt="">
+                </div>
+                <div class="image">
+                    <img onmouseover="change(this)" src="images/7.webp" alt="">
+                </div>
+            </div>
+            <img class="play" src="images/1.webp" alt="">
+        </div>
+
+        <!--  -->
+
+        <div class="right">
+            <div style="color: gray; display: flex; justify-content: space-between;">
+                <p>Home > Mobiles 7 A... > Mobiles > Apple Mobiles > Apple iPhon...</p>
+                <i class="fa-solid fa-share" style="color: grey;"> Share</i>
+            </div>
+            <br>
+            <p style="margin-left: 10px;">Apple iPhone 16 (Black, 128GB)</p>
+            <br>
+            <div style="display: flex; align-items: center; gap: 5px;">
+                <span style="background-color: green; color: white; padding: 5px 15px; margin-left: 10px;">4.6</span>
+                <span style="color: grey;">6,816 Ratings & 319 Reviews</span>
+            </div>
+            <br>
+            <br>
+            <h1 style="margin-left: 10px;">6,242/month</h1>
+            <div style="display: flex; gap: 10px;">
+                <p style="margin-left: 10px;">12 Months No Cost EMI Plan with Bajaj Finserv</p>
+                <p style="color: #2e04a9;">Details</p>
+            </div>
+            <br>
+            <div style="padding-left: 10px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eum eveniet non neque hic itaque repellat amet possimus! Aspernatur iure deserunt incidunt eligendi mollitia repudiandae optio accusantium eius magni illum vitae voluptas culpa cupiditate sed architecto alias odio fugit voluptate laboriosam esse, eum assumenda? Libero nulla at quibusdam eum unde molestias, eaque laboriosam delectus nobis pariatur earum obcaecati beatae accusamus assumenda, quod asperiores esse. Dolore, minima, hic rem sunt quidem quo doloremque repellendus nisi natus magnam repellat incidunt at expedita quaerat alias? Saepe, error minus. Recusandae, autem quasi natus, commodi delectus eos adipisci aliquam doloribus perspiciatis id exercitationem reprehenderit laudantium.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quae sapiente qui illum. Maiores sequi dolorem culpa deserunt magni repellendus ut accusantium vero, quo asperiores ab libero recusandae officia eum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo iusto temporibus dolore commodi eveniet natus mollitia nam eligendi dignissimos labore quos quod voluptatum ipsa rerum, saepe voluptatibus in autem? Numquam eveniet corrupti sapiente minima provident dolorem ex fugiat, esse repellat repudiandae eligendi. Adipisci minus voluptates, libero eligendi eius a eveniet quasi expedita pariatur distinctio accusamus molestiae provident quam quos ea earum excepturi alias voluptate minima modi illum, corrupti reprehenderit iusto aspernatur! Maxime, tenetur facilis blanditiis enim ducimus expedita provident incidunt, voluptatibus cupiditate tempora deleniti quam laudantium sunt labore alias perspiciatis dignissimos amet, quis vero. Omnis vel eum voluptates animi iste possimus perferendis mollitia suscipit, alias culpa veniam fuga assumenda, voluptatum quo impedit adipisci harum. Animi atque corrupti alias quasi dolores tenetur enim inventore? Placeat doloremque assumenda porro maiores perferendis esse qui cum sapiente numquam natus. Quis, ut, blanditiis expedita architecto quibusdam aperiam reiciendis delectus laudantium eligendi quae, sed illum debitis dignissimos. Laborum facilis sed voluptas ullam tempora eligendi culpa obcaecati maiores maxime quae. Atque excepturi molestias odit neque omnis at quae sapiente optio. Ullam dolorum sed, cum atque ducimus, quasi voluptates blanditiis id dignissimos illum at repellat quibusdam architecto culpa beatae, dolor pariatur! Expedita cumque velit beatae maiores ipsam architecto.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var play= document.getElementsByClassName("play")[0];
+        
+        function change(event){
+            play.src= event.src;
+        }
+    </script>
+</body>
+</html>
